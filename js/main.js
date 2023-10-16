@@ -78,7 +78,7 @@ nextButton.addEventListener('click', function () {
     updateCarousel();
 });
 
-const autoInterval = 2000;
+const autoInterval = 8000;
 
 setInterval(() => {
     currentIndex = (currentIndex + 1) % numItems;
