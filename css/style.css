@@ -36,6 +36,7 @@ body {
     background-color: var(--bg-3);
     color: var(--bg-2);
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 nav {
@@ -176,6 +177,7 @@ nav #btn-menu {
     transform: scale(0);
     display: none;
     transition: 0.7s;
+    color: var(--bg-1);
 }
 
 .popup-vid.pop {
@@ -215,17 +217,36 @@ nav #btn-menu {
 }
 
 .btn-home .lanjut {
-    background: var(--txt-1);
+    background: #e32b2b;
     color: var(--bg-1);
+    font-weight: 900;
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
 
+.btn-home .vid{
+    background: transparent;
+    border: 2px solid #e32b2b;
+    color: var(--txt-1);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-home .vid:hover{
+    background: #e32b2b;
+    color: var(--bg-1);
+    font-weight: 900;
+    border: 2px solid #e32b2b;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .btn-home .lanjut:hover {
     background: transparent;
-    border: 2px solid #f1ebc1;
     color: var(--txt-1);
+    border: 2px solid #e32b2b;
 }
 
 .container-profile .sejarah-container {
@@ -312,6 +333,7 @@ nav #btn-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .container-misi .visi,
@@ -324,6 +346,7 @@ nav #btn-menu {
     margin: 20px 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 
 .container-misi .box-faq {
     display: flex;
@@ -367,6 +390,7 @@ nav #btn-menu {
 
 .kopi-container h3 {
     font-size: 38px;
+    color: var(--bg-1);
 }
 
 .wisata-container {
@@ -434,6 +458,14 @@ nav #btn-menu {
     height: 40px;
     border-radius: 5px;
     margin: 10px 10px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.wisata-container .wisata button:hover{
+    background:transparent;
+    border: 2px solid #e32b2b;
+    color: #e32b2b;
 }
 
 .judul-contain {
@@ -538,7 +570,7 @@ nav #btn-menu {
 }
 
 .kontak-container{
-    height: 85vh;
+    height: 95vh;
     width: 100%;
     background-color: var(--bg-3);
     display: flex;
@@ -549,7 +581,7 @@ nav #btn-menu {
     background-color: var(--bg-1);
     position: relative;
     width: 80%;
-    height: 83%;
+    height: 80%;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -634,13 +666,59 @@ input:focus{
 
 .footer-container{
     background-color: var(--bg-2);
-    border-radius: 20% 20% 0 0;
     position: relative;
-    height: 50vh;
-    margin-top: 70px;
+    height: 15vh;
+    color: var(--bg-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+.footer-container .copy{
+    font-size: 14px;
+}
+
+.footer-container .copy a{
+    color: rgb(98, 10, 251);
+}
+.footer-container ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer-container ul li a:hover{
+    color: rgb(98, 10, 251);
+    transition: 0.5s;
 }
 
 
+.top-btn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--txt-1);
+    position: fixed;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: var(--bg-1);
+    transform: scale(0);
+    cursor: pointer;
+}
+.top-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-btn.scroll{
+    transform: scale(1);
+    transition: 0.7s ease-in-out;
+}
 
 
 /* responsive */

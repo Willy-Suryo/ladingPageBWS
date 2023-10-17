@@ -20,7 +20,6 @@
     <!-- end font -->
     <!-- icon -->
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="path/to/dist/feather.js"></script>
     <!-- end icon -->
 </head>
 
@@ -53,10 +52,10 @@
             Bukan tanpa alasan kenapa Bondowoso disebut sebagai Kota Tape, karena daerah ini terkenal dengan kuliner tape singkong
             yang khas.</p>
             <div class="btn-home">
-                <a href="">
+                <a href="#profile">
                     <button class="lanjut">Selengkapnya</button>
                 </a>
-                <button class="lanjut" id="show-vid">Tonton Video</button>
+                <button class="vid" id="show-vid">Tonton Video</button>
             </div>
         </div>
         <div class="popup-vid" id="pop-vid">
@@ -307,11 +306,29 @@
     
     
     <div class="footer-container">
-        
+        <div class="copy" id="slide-1">
+            <p>CopyRight  By  ©<a href="">Willy Suryo Antaredha</a></p>
+        </div>
+        <div class="link">
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#profile">Tentang</a></li>
+                <li><a href="#wisata">Wisata</a></li>
+                <li><a href="#kesenian">Kesenian</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="top-btn" id="btn-top">
+        <a href="#home" class="btn">
+            <i data-feather="arrow-up"></i>
+        </a>
     </div>
 
     <script src="js/main.js"></script>
     <!-- <i data-feather="circle"></i> -->
+    <script src="path/to/dist/feather.js"></script>
     <script>
         feather.replace();
     </script>

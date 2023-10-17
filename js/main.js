@@ -1,11 +1,13 @@
 const nav=document.getElementById('nav');
+const btnTop=document.getElementById('btn-top');
 window,addEventListener('scroll', function(){
     if(window.scrollY>20){
         nav.classList.add("scroll");
-        console.log('discroll')
+        btnTop.classList.add("scroll");
     }
     else{
         nav.classList.remove("scroll");
+        btnTop.classList.remove("scroll");
     }
 });
 
