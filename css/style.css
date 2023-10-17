@@ -140,20 +140,20 @@ nav #btn-menu {
 .home .parag {
     width: 70%;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.1rem;
     color: #f1ebc1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container-home .home h1 {
-    width: 60%;
-    line-height: 60px;
+    width: 80%;
+    line-height: 70px;
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: var(--bg-1);
     /* display: flex;s */
-    font-size: 60px;
+    font-size: 4em;
     /* letter-spacing: 5px; */
 }
 
@@ -235,7 +235,7 @@ nav #btn-menu {
 }
 
 .btn-home .vid:hover{
-    background: #e32b2b;
+    background: var(--txt-1);
     color: var(--bg-1);
     font-weight: 900;
     border: 2px solid #e32b2b;
@@ -725,6 +725,23 @@ input:focus{
 /* tablet */
 @media screen and (max-width: 800px) {
 
+    .container-home{
+        justify-content: start;
+        width: 100%;
+        padding: 0 5%;
+    }
+    .container-home .home{
+        align-items: start;
+        text-align: start;
+    }
+    .container-home .home h1{
+        font-size: 65%;
+        text-align: start;
+    }
+    .container-home .home .parag{
+        text-align: start;
+        width: 100%;
+    }
     nav #btn-menu {
         display: block;
         cursor: pointer;
@@ -770,5 +787,25 @@ input:focus{
     .container-home .home h1 {
         font-size: 43px;
         width: 80%;
+    }
+    .container-profile .sejarah-container{
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .container-profile .sejarah-container .sejarah{
+        width: 80%;
+        align-items: start;
+    }
+}
+@media screen and (max-width: 480px){
+    .container-home .home h1{
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+    .container-home .home .parag{
+        font-size: 80%;
+    }
+    .container-home .home .btn-home{
+        display: flex;
     }
 }
